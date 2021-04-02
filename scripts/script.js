@@ -1,12 +1,20 @@
 const hamburgerButton = document.querySelector(".header__hamburgerMenu");
+const header = document.querySelector(".header");
+const backgroundOverlay = document.querySelector(".overlay");
 
 hamburgerButton.addEventListener("click", () => {
   console.log("button clicked");
-  let classHamCheck = hamburgerButton.classList.contains("open");
+  let classHamCheck = header.classList.contains("open");
 
   if (classHamCheck) {
-    hamburgerButton.classList.remove("open");
+    // close menu
+    header.classList.remove("open");
+    backgroundOverlay.classList.remove("background-fade-in");
+    backgroundOverlay.classList.add("background-fade-out");
   } else {
-    hamburgerButton.classList.add("open");
+    // open menu
+    header.classList.add("open");
+    backgroundOverlay.classList.remove("background-fade-out");
+    backgroundOverlay.classList.add("background-fade-in");
   }
 });

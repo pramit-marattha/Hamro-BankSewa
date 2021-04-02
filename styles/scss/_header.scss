@@ -1,4 +1,32 @@
 .header {
+  &.open {
+    .overlay {
+      display: block;
+    }
+    .header__hamburgerMenu {
+      > span:first-child {
+        transform: rotate(45deg);
+      }
+      > span:nth-child(2) {
+        opacity: 0;
+      }
+      > span:last-child {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 4.75rem;
+    right: 0px;
+    bottom: 0px;
+    left: 0;
+    //   background-color: $defaultBlue;
+    background-image: linear-gradient($defaultBlue, transparent);
+  }
+
   nav {
     padding: 1.06rem 1.5rem;
   }
@@ -18,17 +46,6 @@
       transform-origin: 4px 2px;
       &:not(:last-child) {
         margin-bottom: 3px;
-      }
-    }
-    &.open {
-      > span:first-child {
-        transform: rotate(45deg);
-      }
-      > span:nth-child(2) {
-        opacity: 0;
-      }
-      > span:last-child {
-        transform: rotate(-45deg);
       }
     }
   }

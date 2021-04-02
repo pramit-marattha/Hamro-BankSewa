@@ -1,3 +1,71 @@
+@-webkit-keyframes background-fade-in {
+  from {
+    visibility: hidden;
+    opacity: 0;
+  }
+  1% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes background-fade-in {
+  from {
+    visibility: hidden;
+    opacity: 0;
+  }
+  1% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.background-fade-in {
+  -webkit-animation: background-fade-in 350ms ease-in-out forwards;
+          animation: background-fade-in 350ms ease-in-out forwards;
+}
+
+@-webkit-keyframes background-fade-out {
+  from {
+    visibility: visible;
+    opacity: 1;
+  }
+  99% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+@keyframes background-fade-out {
+  from {
+    visibility: visible;
+    opacity: 1;
+  }
+  99% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+.background-fade-out {
+  -webkit-animation: background-fade-out 450ms ease-in-out forwards;
+          animation: background-fade-out 450ms ease-in-out forwards;
+}
+
 html {
   font-size: 100%;
   -webkit-box-sizing: border-box;
@@ -73,6 +141,35 @@ button,
   }
 }
 
+.header.open .overlay {
+  display: block;
+}
+
+.header.open .header__hamburgerMenu > span:first-child {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.header.open .header__hamburgerMenu > span:nth-child(2) {
+  opacity: 0;
+}
+
+.header.open .header__hamburgerMenu > span:last-child {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.header .overlay {
+  display: none;
+  position: fixed;
+  top: 4.75rem;
+  right: 0px;
+  bottom: 0px;
+  left: 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#000b76), to(transparent));
+  background-image: linear-gradient(#000b76, transparent);
+}
+
 .header nav {
   padding: 1.06rem 1.5rem;
 }
@@ -94,20 +191,6 @@ button,
 
 .header__hamburgerMenu > span:not(:last-child) {
   margin-bottom: 3px;
-}
-
-.header__hamburgerMenu.open > span:first-child {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.header__hamburgerMenu.open > span:nth-child(2) {
-  opacity: 0;
-}
-
-.header__hamburgerMenu.open > span:last-child {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
 }
 
 .header__link a {

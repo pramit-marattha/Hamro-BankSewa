@@ -1,4 +1,8 @@
+// functional scss style
 @import "variables";
+@import "mixins";
+@import "transitionAnim";
+
+// components scss styles
 @import "globals";
 @import "header";
-@import "mixins";
