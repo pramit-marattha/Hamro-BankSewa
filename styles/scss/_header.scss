@@ -1,0 +1,10 @@
+.header {
+  &__banksewaLogo {
+  }
+
+  &__hamburgerMenu {
+    > span {
+      display: block;
+    }
+  }
+}
