@@ -18,4 +18,11 @@
       }
     }
   }
+
+  &__link {
+    a {
+      font-size: $font-small;
+      color: $grayishBlue;
+    }
+  }
 }
