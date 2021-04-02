@@ -19,7 +19,7 @@
   .overlay {
     display: none;
     position: fixed;
-    top: 4.75rem;
+    top: 0;
     right: 0px;
     bottom: 0px;
     left: 0;
@@ -28,11 +28,14 @@
   }
 
   nav {
-    padding: 1.06rem 1.5rem;
+    position: relative;
+    background-color: $white;
+    padding-left: 1.06rem;
+    padding-right: 1.06rem;
   }
   &__banksewaLogo {
     img {
-      width: 50%;
+      width: 60%;
     }
   }
 
@@ -47,6 +50,25 @@
       &:not(:last-child) {
         margin-bottom: 3px;
       }
+    }
+  }
+
+  &__navmenu {
+    background: $white;
+    position: absolute;
+    margin: 2.7rem 1.6rem;
+    padding: 2rem;
+    border-radius: 30px;
+    width: calc(100% - 7rem);
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 2rem;
+
+    a {
+      display: block;
+      color: $awesomeDark;
+      padding: 0.7rem;
+      text-align: center;
     }
   }
 

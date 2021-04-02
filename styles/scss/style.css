@@ -1,3 +1,7 @@
+.background-fade-register {
+  visibility: hidden;
+}
+
 @-webkit-keyframes background-fade-in {
   from {
     visibility: hidden;
@@ -8,6 +12,7 @@
     opacity: 0;
   }
   to {
+    visibility: visible;
     opacity: 1;
   }
 }
@@ -22,6 +27,7 @@
     opacity: 0;
   }
   to {
+    visibility: visible;
     opacity: 1;
   }
 }
@@ -88,10 +94,19 @@ body {
   font-weight: 500;
 }
 
+body.scrollBlocked {
+  overflow: hidden;
+}
+
 a,
 a:visited,
 a:hover {
   text-decoration: none;
+}
+
+.container {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .flex {
@@ -162,7 +177,7 @@ button,
 .header .overlay {
   display: none;
   position: fixed;
-  top: 4.75rem;
+  top: 0;
   right: 0px;
   bottom: 0px;
   left: 0;
@@ -171,11 +186,14 @@ button,
 }
 
 .header nav {
-  padding: 1.06rem 1.5rem;
+  position: relative;
+  background-color: white;
+  padding-left: 1.06rem;
+  padding-right: 1.06rem;
 }
 
 .header__banksewaLogo img {
-  width: 50%;
+  width: 60%;
 }
 
 .header__hamburgerMenu > span {
@@ -191,6 +209,26 @@ button,
 
 .header__hamburgerMenu > span:not(:last-child) {
   margin-bottom: 3px;
+}
+
+.header__navmenu {
+  background: white;
+  position: absolute;
+  margin: 2.7rem 1.6rem;
+  padding: 2rem;
+  border-radius: 30px;
+  width: calc(100% - 7rem);
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-top: 2rem;
+}
+
+.header__navmenu a {
+  display: block;
+  color: #5e5d5d;
+  padding: 0.7rem;
+  text-align: center;
 }
 
 .header__link a {
