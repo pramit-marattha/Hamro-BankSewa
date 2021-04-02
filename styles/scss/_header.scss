@@ -4,6 +4,7 @@
   }
   &__banksewaLogo {
     img {
+      width: 30%;
     }
   }
 
@@ -24,5 +25,15 @@
       font-size: $font-small;
       color: $grayishBlue;
     }
+  }
+
+  &__login {
+    font-size: $font-medium;
+    color: $white;
+  }
+
+  &__register {
+    font-size: $font-medium;
+    color: $white;
   }
 }

@@ -1,3 +1,5 @@
+@import "mixins";
+
 html {
   font-size: 100%;
   box-sizing: border-box;
@@ -47,4 +49,17 @@ button,
   cursor: pointer;
   color: $white;
   font-weight: bold;
+}
+
+// mobile and desktop responsive and visibilty
+.visibility-hide-for-mobile {
+  @include breakpoints-down(medium) {
+    display: none;
+  }
+}
+
+.visibility-hide-for-desktop {
+  @include breakpoints-up(large) {
+    display: none;
+  }
 }
