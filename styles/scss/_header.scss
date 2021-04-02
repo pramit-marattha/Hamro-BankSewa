@@ -1,10 +1,10 @@
 .header {
   nav {
-    padding: 24px;
+    padding: 1.06rem 1.5rem;
   }
   &__banksewaLogo {
     img {
-      width: 30%;
+      width: 50%;
     }
   }
 
@@ -22,18 +22,60 @@
 
   &__link {
     a {
+      position: relative;
       font-size: $font-small;
+      font-style: bold;
       color: $grayishBlue;
+      transition: color 350ms ease-in-out;
+
+      //   &:first-child {
+      //     margin-left: -90px;
+      //   }
+      &:not(:last-child) {
+        margin-right: 32px;
+      }
+
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 5px;
+        left: 0;
+        right: 0;
+        bottom: -30px;
+        background: $defaultBlue;
+        opacity: 0;
+        transition: opacity 350ms ease-in-out;
+      }
+
+      &:hover {
+        font-style: bold;
+        color: $nitroDarkBlue;
+
+        &::before {
+          opacity: 1;
+        }
+      }
     }
   }
 
   &__login {
     font-size: $font-medium;
     color: $white;
+    margin-left: 60px;
+    margin-right: 20px;
+    &:hover {
+      background: $defaultBlue;
+    }
   }
 
   &__register {
     font-size: $font-medium;
     color: $white;
+    margin-right: 50px;
+    transition: opacity 350ms ease-in-out;
+    &:hover {
+      background: $defaultBlue;
+    }
   }
 }

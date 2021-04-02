@@ -17,7 +17,7 @@ body {
   line-height: 1.5;
   font-family: "Poppins", sans-serif;
   font-size: $font-medium;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 a,
@@ -44,10 +44,10 @@ button,
 .button {
   padding: 1rem 1.9rem;
   border-radius: 5px;
-  background: $buttonBlue;
+  background: $buttonLittleBlue;
   border: 0;
   cursor: pointer;
-  color: $white;
+  color: $veryLightGrey;
   font-weight: bold;
 }
 

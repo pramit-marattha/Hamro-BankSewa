@@ -17,7 +17,7 @@ body {
   line-height: 1.5;
   font-family: "Poppins", sans-serif;
   font-size: 1.3rem;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 a,
@@ -54,10 +54,10 @@ button,
 .button {
   padding: 1rem 1.9rem;
   border-radius: 5px;
-  background: #98d4e7;
+  background: #77c5dd;
   border: 0;
   cursor: pointer;
-  color: white;
+  color: #fafafa;
   font-weight: bold;
 }
 
@@ -74,11 +74,11 @@ button,
 }
 
 .header nav {
-  padding: 24px;
+  padding: 1.06rem 1.5rem;
 }
 
 .header__banksewaLogo img {
-  width: 30%;
+  width: 50%;
 }
 
 .header__hamburgerMenu > span {
@@ -93,17 +93,61 @@ button,
 }
 
 .header__link a {
-  font-size: 0.9rem;
+  position: relative;
+  font-size: 0.99rem;
+  font-style: bold;
   color: #9698a6;
+  -webkit-transition: color 350ms ease-in-out;
+  transition: color 350ms ease-in-out;
+}
+
+.header__link a:not(:last-child) {
+  margin-right: 32px;
+}
+
+.header__link a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 5px;
+  left: 0;
+  right: 0;
+  bottom: -30px;
+  background: #000b76;
+  opacity: 0;
+  -webkit-transition: opacity 350ms ease-in-out;
+  transition: opacity 350ms ease-in-out;
+}
+
+.header__link a:hover {
+  font-style: bold;
+  color: #2d314d;
+}
+
+.header__link a:hover::before {
+  opacity: 1;
 }
 
 .header__login {
   font-size: 1.3rem;
   color: white;
+  margin-left: 60px;
+  margin-right: 20px;
+}
+
+.header__login:hover {
+  background: #000b76;
 }
 
 .header__register {
   font-size: 1.3rem;
   color: white;
+  margin-right: 50px;
+  -webkit-transition: opacity 350ms ease-in-out;
+  transition: opacity 350ms ease-in-out;
+}
+
+.header__register:hover {
+  background: #000b76;
 }
 /*# sourceMappingURL=style.css.map */
