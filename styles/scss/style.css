@@ -459,16 +459,26 @@ button,
   background-color: #000b76;
 }
 
-@media (min-width: 64em) {
+@media (min-width: 40em) {
   .services__grid {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
 .services__item {
   padding: 1rem;
+}
+
+@media (min-width: 40em) {
+  .services__item {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 50%;
+            flex: 1 0 50%;
+  }
 }
 
 @media (min-width: 64em) {

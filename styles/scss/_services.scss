@@ -1,11 +1,15 @@
 .services {
   &__grid {
-    @include breakpoints-up(large) {
+    @include breakpoints-up(medium) {
       display: flex;
+      flex-wrap: wrap;
     }
   }
   &__item {
     padding: 1rem;
+    @include breakpoints-up(medium) {
+      flex: 1 0 50%; // flec grow ,flex shrink, flex basis(default width tha the item is going to have)
+    }
     @include breakpoints-up(large) {
       flex: 1;
     }
