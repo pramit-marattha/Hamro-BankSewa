@@ -494,14 +494,6 @@ button,
   }
 }
 
-.hero__content p {
-  line-height: 1.6;
-  font-weight: 295;
-  font-size: 1rem;
-  color: #2d314d;
-  margin-bottom: 2.3rem;
-}
-
 .hero__register:hover {
   background-color: #000b76;
 }
@@ -586,5 +578,26 @@ button,
 .services__description {
   font-size: 0.7rem;
   line-height: 1.5;
+}
+
+.blog__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+@media (min-width: 40em) {
+  .blog__grid {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 64em) {
+  .blog__grid {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
 }
 /*# sourceMappingURL=style.css.map */
