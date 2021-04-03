@@ -10,11 +10,11 @@
 
   &__image {
     position: relative;
-    background-image: url(../../assets/blob.svg);
+    // background-image: url(../../assets/blob.svg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    min-height: 19rem;
+    min-height: 29rem;
 
     @include breakpoints-up(medium) {
       min-height: 35rem;
@@ -26,7 +26,7 @@
       order: 2;
       height: 38rem;
       background: none;
-      //background-image: url(../../assets/blob.svg);
+
       //background-position: left center;
     }
 
@@ -34,6 +34,7 @@
       content: "";
       height: 100%;
       width: 100%;
+      // z-index: -1;
       position: absolute;
       background-image: url(../../assets/mockups.png);
       background-size: 90%;
@@ -77,6 +78,7 @@
       content: "";
       height: 100%;
       width: 100%;
+      // z-index: -2;
       position: absolute;
       background-image: url(../../assets/blob.svg);
       background-size: 100%;

@@ -316,6 +316,7 @@ button,
 .header__navmenu {
   background: white;
   position: absolute;
+  z-index: 1111;
   margin: 2.7rem 1.6rem;
   padding: 2rem;
   border-radius: 30px;
@@ -407,11 +408,10 @@ button,
 
 .hero__image {
   position: relative;
-  background-image: url(../../assets/blob.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  min-height: 19rem;
+  min-height: 29rem;
 }
 
 @media (min-width: 40em) {
