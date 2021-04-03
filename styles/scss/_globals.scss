@@ -34,6 +34,12 @@ a:hover {
   padding-bottom: 1.5rem;
 }
 
+h1,
+h2,
+h3 {
+  margin-top: 0px;
+}
+
 .flex {
   display: flex;
 
@@ -58,6 +64,7 @@ button,
   cursor: pointer;
   color: $veryLightGrey;
   font-weight: bold;
+  font-size: $font-medium;
 }
 
 // mobile and desktop responsive and visibilty

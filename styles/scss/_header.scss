@@ -19,6 +19,7 @@
   .overlay {
     display: none;
     position: fixed;
+
     top: 0;
     right: 0px;
     bottom: 0px;
@@ -113,7 +114,6 @@
 
   &__login {
     font-size: $font-medium;
-    color: $white;
     margin-left: 60px;
     margin-right: 20px;
     &:hover {
@@ -123,7 +123,6 @@
 
   &__register {
     font-size: $font-medium;
-    color: $white;
     margin-right: 50px;
     transition: opacity 350ms ease-in-out;
     &:hover {

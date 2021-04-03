@@ -109,6 +109,12 @@ a:hover {
   padding-bottom: 1.5rem;
 }
 
+h1,
+h2,
+h3 {
+  margin-top: 0px;
+}
+
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -142,6 +148,7 @@ button,
   cursor: pointer;
   color: #fafafa;
   font-weight: bold;
+  font-size: 1.3rem;
 }
 
 @media (max-width: 63.9em) {
@@ -269,7 +276,6 @@ button,
 
 .header__login {
   font-size: 1.3rem;
-  color: white;
   margin-left: 60px;
   margin-right: 20px;
 }
@@ -280,7 +286,6 @@ button,
 
 .header__register {
   font-size: 1.3rem;
-  color: white;
   margin-right: 50px;
   -webkit-transition: opacity 350ms ease-in-out;
   transition: opacity 350ms ease-in-out;
@@ -288,5 +293,79 @@ button,
 
 .header__register:hover {
   background: #000b76;
+}
+
+@media (min-width: 64em) {
+  .hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.hero__image {
+  position: relative;
+  background-image: url(../../assets/blob.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 17rem;
+}
+
+@media (min-width: 64em) {
+  .hero__image {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+.hero__image::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-image: url(../../assets/mockups.png);
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.hero__content {
+  text-align: center;
+}
+
+@media (min-width: 64em) {
+  .hero__content {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+.hero__content h1 {
+  font-weight: 395;
+  color: #2d314d;
+  font-size: 2.7rem;
+  line-height: 1.4;
+  margin-bottom: 1.7rem;
+}
+
+.hero__content p {
+  line-height: 1.6;
+  font-weight: 295;
+  font-size: 1rem;
+  color: #2d314d;
+  margin-bottom: 2.3rem;
+}
+
+.hero__register:hover {
+  background-color: #000b76;
 }
 /*# sourceMappingURL=style.css.map */

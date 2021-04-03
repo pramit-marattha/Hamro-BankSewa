@@ -1,0 +1,57 @@
+.hero {
+  @include breakpoints-up(large) {
+    display: flex;
+  }
+
+  &__image {
+    position: relative;
+    background-image: url(../../assets/blob.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 17rem;
+
+    @include breakpoints-up(large) {
+      flex: 1;
+      order: 2;
+    }
+
+    &::before {
+      content: "";
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      background-image: url(../../assets/mockups.png);
+      background-size: 70%;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+  }
+  &__content {
+    text-align: center;
+
+    @include breakpoints-up(large) {
+      flex: 1;
+      order: 1;
+    }
+    h1 {
+      font-weight: 395;
+      color: $nitroDarkBlue;
+      font-size: 2.7rem;
+      line-height: 1.4;
+      margin-bottom: 1.7rem;
+    }
+    p {
+      line-height: 1.6;
+      font-weight: 295;
+      font-size: 1rem;
+      color: $nitroDarkBlue;
+      margin-bottom: 2.3rem;
+    }
+  }
+  &__register {
+    &:hover {
+      background-color: $defaultBlue;
+    }
+  }
+}
