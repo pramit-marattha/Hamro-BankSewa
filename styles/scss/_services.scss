@@ -1,0 +1,21 @@
+.services {
+  &__grid {
+    @include breakpoints-up(large) {
+      display: flex;
+    }
+  }
+  &__item {
+    padding: 1rem;
+    @include breakpoints-up(large) {
+      flex: 1;
+    }
+  }
+  &__image {
+    width: 20%;
+    height: auto;
+  }
+  &__title {
+  }
+  &__description {
+  }
+}
