@@ -1,38 +1,58 @@
 .footer {
   background-color: $defaultBlue;
   color: $white;
-  padding: 2.5rem;
+  padding: 2.9rem;
   text-align: center;
 
-  @include breakpoints-up(large) {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr) 2fr;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas:
-      "logo links1 links2 links3 register"
-      "ico links1 links2 links3 register";
+  .container {
+    @include breakpoints-up(large) {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr 3fr;
+      grid-template-rows: 1fr auto;
+      grid-template-areas:
+        "logo links1 links2 links3 register"
+        "social links1 links2 links3 copyright";
+      gap: 1rem;
+      justify-items: start;
+    }
   }
+
   a {
     color: $white;
   }
   &__logo {
-    margin-bottom: 1.9rem;
     display: inline-block;
 
+    @include breakpoints-up(medium) {
+      margin-bottom: 1.9rem;
+    }
     @include breakpoints-up(large) {
       grid-area: logo;
     }
   }
   &__icons {
-    margin-bottom: 1.9rem;
     display: inline-block;
     align-items: center;
+    height: 1.25rem;
+    @include breakpoints-up(medium) {
+      margin-bottom: 1.9rem;
+    }
+    @include breakpoints-up(large) {
+      grid-area: social;
+      align-self: end;
+    }
     //
   }
   &__footlinks {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 0.8rem;
+
+    @include breakpoints-up(large) {
+      align-items: start;
+      justify-content: space-between;
+    }
 
     &.col1 {
       @include breakpoints-up(large) {
@@ -49,17 +69,28 @@
       @include breakpoints-up(large) {
         grid-area: links3;
       }
+      @include breakpoints-up(medium) {
+        margin-bottom: 1.9rem;
+      }
     }
+
     a {
-      flex: 0 0 auto;
-      line-height: 2.25;
+      @include breakpoints-up(large) {
+        flex: 0 0 auto;
+        line-height: 2.25;
+      }
     }
   }
   &__register {
     @include breakpoints-up(large) {
       grid-area: register;
+      text-align: right;
+      justify-self: end;
     }
     a.button {
+      @include breakpoints-up(medium) {
+        margin-bottom: 1.9rem;
+      }
       margin-bottom: 1.9rem;
       display: inline-block;
       &:hover {
@@ -68,5 +99,12 @@
     }
   }
   &__copyright {
+    font-size: 0.75rem;
+    color: $grayishBlue;
+    @include breakpoints-up(large) {
+      grid-area: copyright;
+      align-self: end;
+      justify-self: end;
+    }
   }
 }
