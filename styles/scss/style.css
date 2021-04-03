@@ -105,8 +105,41 @@ a:hover {
 }
 
 .container {
+  max-width: 90rem;
+  margin: 0 auto;
+}
+
+.container--paddingTop {
+  padding-top: 1.5rem;
+}
+
+.container--paddingBottom {
+  padding-bottom: 1.5rem;
+}
+
+.container--paddingLeft {
+  padding-left: 1.5rem;
+}
+
+.container--paddingRight {
+  padding-right: 1.5rem;
+}
+
+.container--paddingAll {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.container--paddingX {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.container--paddingY {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
 }
 
 h1,
@@ -295,8 +328,12 @@ button,
   background: #000b76;
 }
 
+.hero {
+  background-color: #fafafa;
+}
+
 @media (min-width: 64em) {
-  .hero {
+  .hero .container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -312,18 +349,47 @@ button,
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  min-height: 17rem;
+  min-height: 19rem;
+}
+
+@media (min-width: 40em) {
+  .hero__image {
+    min-height: 35rem;
+    background-position: center 50%;
+  }
 }
 
 @media (min-width: 64em) {
   .hero__image {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+    -webkit-box-flex: 3;
+        -ms-flex: 3;
+            flex: 3;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
-    height: 41rem;
+    height: 38rem;
+    background: none;
+  }
+}
+
+.hero__image::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-image: url(../../assets/mockups.png);
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+@media (min-width: 64em) {
+  .hero__image::after {
+    width: 115%;
+    height: 117%;
+    background-size: 105%;
+    background-position: center 190%;
+    padding: 25.5rem;
   }
 }
 
@@ -332,10 +398,23 @@ button,
   height: 100%;
   width: 100%;
   position: absolute;
-  background-image: url(../../assets/mockups.png);
-  background-size: 70%;
+  background-image: url(../../assets/blob.svg);
+  background-size: 100%;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center bottom;
+}
+
+@media (min-width: 40em) {
+  .hero__image::before {
+    background-size: 92%;
+  }
+}
+
+@media (min-width: 64em) {
+  .hero__image::before {
+    height: 105%;
+    width: 105%;
+  }
 }
 
 .hero__content {
@@ -344,12 +423,13 @@ button,
 
 @media (min-width: 64em) {
   .hero__content {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
+    text-align: left;
   }
 }
 
@@ -359,6 +439,12 @@ button,
   font-size: 2.7rem;
   line-height: 1.4;
   margin-bottom: 1.7rem;
+}
+
+@media (min-width: 64em) {
+  .hero__content h1 {
+    font-size: 3.3rem;
+  }
 }
 
 .hero__content p {

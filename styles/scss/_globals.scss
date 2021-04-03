@@ -30,8 +30,34 @@ a:hover {
   text-decoration: none;
 }
 .container {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  max-width: 90rem;
+  margin: 0 auto;
+  &--paddingTop {
+    padding-top: 1.5rem;
+  }
+  &--paddingBottom {
+    padding-bottom: 1.5rem;
+  }
+  &--paddingLeft {
+    padding-left: 1.5rem;
+  }
+  &--paddingRight {
+    padding-right: 1.5rem;
+  }
+  &--paddingAll {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
+  &--paddingX {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  &--paddingY {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
 }
 
 h1,
