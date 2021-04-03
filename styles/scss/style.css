@@ -111,11 +111,23 @@ a:hover {
 }
 
 .container--paddingTop {
-  padding-top: 1.5rem;
+  padding-top: 4.3rem;
+}
+
+@media (min-width: 64em) {
+  .container--paddingTop {
+    padding-top: 6rem;
+  }
 }
 
 .container--paddingBottom {
-  padding-bottom: 1.5rem;
+  padding-bottom: 4.3rem;
+}
+
+@media (min-width: 64em) {
+  .container--paddingBottom {
+    padding-bottom: 6rem;
+  }
 }
 
 .container--paddingLeft {
@@ -127,18 +139,32 @@ a:hover {
 }
 
 .container--paddingAll {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  padding-top: 4.3rem;
+  padding-bottom: 4.3rem;
   padding-right: 1.5rem;
   padding-left: 1.5rem;
 }
 
-.container--paddingX {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+@media (min-width: 64em) {
+  .container--paddingAll {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
 }
 
 .container--paddingY {
+  padding-top: 4.3rem;
+  padding-bottom: 4.3rem;
+}
+
+@media (min-width: 64em) {
+  .container--paddingY {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
+.container--paddingX {
   padding-right: 1.5rem;
   padding-left: 1.5rem;
 }
@@ -482,6 +508,13 @@ button,
 
 .services {
   background-color: #fafafa;
+  text-align: center;
+}
+
+@media (min-width: 40em) {
+  .services {
+    text-align: left;
+  }
 }
 
 .services__quotes {
@@ -532,5 +565,26 @@ button,
   .services__image {
     margin-bottom: 2.7rem;
   }
+}
+
+.services__title {
+  font-size: 0.3rem;
+  font-weight: 400;
+  color: #2d314d;
+  letter-spacing: 0.1px;
+  line-height: 1.4;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 64em) {
+  .services__title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.services__description {
+  font-size: 0.7rem;
+  line-height: 1.5;
 }
 /*# sourceMappingURL=style.css.map */

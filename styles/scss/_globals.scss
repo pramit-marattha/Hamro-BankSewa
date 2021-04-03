@@ -34,10 +34,18 @@ a:hover {
   max-width: 90rem;
   margin: 0 auto;
   &--paddingTop {
-    padding-top: 1.5rem;
+    padding-top: 4.3rem;
+
+    @include breakpoints-up(large) {
+      padding-top: 6rem;
+    }
   }
   &--paddingBottom {
-    padding-bottom: 1.5rem;
+    padding-bottom: 4.3rem;
+
+    @include breakpoints-up(large) {
+      padding-bottom: 6rem;
+    }
   }
   &--paddingLeft {
     padding-left: 1.5rem;
@@ -46,16 +54,26 @@ a:hover {
     padding-right: 1.5rem;
   }
   &--paddingAll {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding-top: 4.3rem;
+    padding-bottom: 4.3rem;
     padding-right: 1.5rem;
     padding-left: 1.5rem;
-  }
-  &--paddingX {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+
+    @include breakpoints-up(large) {
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+    }
   }
   &--paddingY {
+    padding-top: 4.3rem;
+    padding-bottom: 4.3rem;
+
+    @include breakpoints-up(large) {
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+    }
+  }
+  &--paddingX {
     padding-right: 1.5rem;
     padding-left: 1.5rem;
   }
