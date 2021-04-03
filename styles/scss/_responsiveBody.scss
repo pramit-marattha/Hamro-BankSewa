@@ -1,5 +1,5 @@
 .hero {
-  background-color: $veryLightGrey;
+  background-color: $white;
 
   .container {
     @include breakpoints-up(large) {
@@ -47,12 +47,21 @@
         // background-size: 92%;
       }
 
+      @include breakpoints-up(xmedium) {
+        // width: 115%;
+        // height: 117%;
+        // background-size: 105%;
+        // background-position: center 190%;
+        // padding: 20rem;
+        // left: 1%;
+      }
+
       @include breakpoints-up(large) {
-        width: 115%;
-        height: 117%;
+        width: 91%;
+        height: 99%;
         background-size: 105%;
-        background-position: center 190%;
-        padding: 25.5rem;
+        background-position: center 180%;
+        padding: 21.2rem;
         // left: 1%;
       }
     }
@@ -83,16 +92,7 @@
       order: 1;
       text-align: left;
     }
-    h1 {
-      font-weight: 395;
-      color: $nitroDarkBlue;
-      font-size: 2.7rem;
-      line-height: 1.4;
-      margin-bottom: 1.7rem;
-      @include breakpoints-up(large) {
-        font-size: $font-large;
-      }
-    }
+
     p {
       line-height: 1.6;
       font-weight: 295;

@@ -92,6 +92,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 0.99rem;
   font-weight: 500;
+  min-height: 300vh;
 }
 
 body.scrollBlocked {
@@ -145,7 +146,41 @@ a:hover {
 h1,
 h2,
 h3 {
+  font-weight: 395;
+  color: #2d314d;
+  line-height: 1.4;
   margin-top: 0px;
+}
+
+h1 {
+  font-size: 2.7rem;
+  margin-bottom: 1.7rem;
+}
+
+@media (min-width: 64em) {
+  h1 {
+    font-size: 3.3rem;
+  }
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 64em) {
+  h2 {
+    font-size: 2.3rem;
+    margin-bottom: 2.9rem;
+  }
+}
+
+p {
+  line-height: 1.6;
+  font-weight: 295;
+  font-size: 1rem;
+  color: #2d314d;
+  margin-bottom: 2.3rem;
 }
 
 .flex {
@@ -329,7 +364,7 @@ button,
 }
 
 .hero {
-  background-color: #fafafa;
+  background-color: white;
 }
 
 @media (min-width: 64em) {
@@ -385,11 +420,11 @@ button,
 
 @media (min-width: 64em) {
   .hero__image::after {
-    width: 115%;
-    height: 117%;
+    width: 91%;
+    height: 99%;
     background-size: 105%;
-    background-position: center 190%;
-    padding: 25.5rem;
+    background-position: center 180%;
+    padding: 21.2rem;
   }
 }
 
@@ -433,20 +468,6 @@ button,
   }
 }
 
-.hero__content h1 {
-  font-weight: 395;
-  color: #2d314d;
-  font-size: 2.7rem;
-  line-height: 1.4;
-  margin-bottom: 1.7rem;
-}
-
-@media (min-width: 64em) {
-  .hero__content h1 {
-    font-size: 3.3rem;
-  }
-}
-
 .hero__content p {
   line-height: 1.6;
   font-weight: 295;
@@ -457,6 +478,20 @@ button,
 
 .hero__register:hover {
   background-color: #000b76;
+}
+
+.services {
+  background-color: #fafafa;
+}
+
+.services__quotes {
+  margin-bottom: 3.75rem;
+}
+
+@media (min-width: 64em) {
+  .services__quotes {
+    width: 55%;
+  }
 }
 
 @media (min-width: 40em) {
@@ -490,7 +525,12 @@ button,
 }
 
 .services__image {
-  width: 20%;
-  height: auto;
+  margin-bottom: 1.8rem;
+}
+
+@media (min-width: 64em) {
+  .services__image {
+    margin-bottom: 2.7rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

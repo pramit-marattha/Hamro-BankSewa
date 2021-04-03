@@ -1,4 +1,12 @@
 .services {
+  &__quotes {
+    margin-bottom: 3.75rem;
+
+    @include breakpoints-up(large) {
+      width: 55%;
+    }
+  }
+  background-color: $veryLightGrey;
   &__grid {
     @include breakpoints-up(medium) {
       display: flex;
@@ -15,8 +23,11 @@
     }
   }
   &__image {
-    width: 20%;
-    height: auto;
+    margin-bottom: 1.8rem;
+
+    @include breakpoints-up(large) {
+      margin-bottom: 2.7rem;
+    }
   }
   &__title {
   }
