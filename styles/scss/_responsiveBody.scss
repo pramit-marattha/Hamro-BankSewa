@@ -1,6 +1,7 @@
 .hero {
   @include breakpoints-up(large) {
     display: flex;
+    align-items: center;
   }
 
   &__image {
@@ -14,6 +15,7 @@
     @include breakpoints-up(large) {
       flex: 1;
       order: 2;
+      height: 41rem;
     }
 
     &::before {
