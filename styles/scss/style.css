@@ -93,6 +93,7 @@ body {
   font-size: 0.99rem;
   font-weight: 500;
   min-height: 300vh;
+  overflow-x: hidden;
 }
 
 body.scrollBlocked {
@@ -435,7 +436,7 @@ button,
 
 .hero__image::after {
   content: "";
-  height: 100%;
+  height: auto;
   width: 100%;
   position: absolute;
   background-image: url(../../assets/mockups.png);
@@ -444,13 +445,20 @@ button,
   background-position: center center;
 }
 
+@media screen and (min-width: 1025px) and (max-width: 1295px) {
+  .hero__image::after {
+    background-position: center 180%;
+    padding-bottom: 20.2rem;
+  }
+}
+
 @media (min-width: 64em) {
   .hero__image::after {
-    width: 91%;
-    height: 99%;
+    width: 115%;
+    height: 114%;
     background-size: 105%;
     background-position: center 180%;
-    padding: 21.2rem;
+    padding: 25.2rem;
   }
 }
 

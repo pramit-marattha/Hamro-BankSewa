@@ -32,7 +32,7 @@
 
     &::after {
       content: "";
-      height: 100%;
+      height: auto;
       width: 100%;
       position: absolute;
       background-image: url(../../assets/mockups.png);
@@ -46,7 +46,14 @@
         // background-position: center 190%;
         // background-size: 92%;
       }
-
+      @media screen and (min-width: 1025px) and (max-width: 1295px) {
+        // width: 95%;
+        // height: 114%;
+        // display: none;
+        // background-size: 10%;
+        background-position: center 180%;
+        padding-bottom: 20.2rem;
+      }
       @include breakpoints-up(xmedium) {
         // width: 115%;
         // height: 117%;
@@ -57,11 +64,11 @@
       }
 
       @include breakpoints-up(large) {
-        width: 91%;
-        height: 99%;
+        width: 115%;
+        height: 114%;
         background-size: 105%;
         background-position: center 180%;
-        padding: 21.2rem;
+        padding: 25.2rem;
         // left: 1%;
       }
     }

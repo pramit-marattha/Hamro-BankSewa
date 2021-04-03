@@ -19,6 +19,7 @@ body {
   font-size: $font-small;
   font-weight: 500;
   min-height: 300vh;
+  overflow-x: hidden;
 
   &.scrollBlocked {
     overflow: hidden;
