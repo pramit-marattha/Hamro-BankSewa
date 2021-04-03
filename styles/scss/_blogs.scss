@@ -21,6 +21,10 @@
     border-radius: 0.5rem;
     box-shadow: $box-shadow;
     overflow: hidden;
+    transition: all 350ms ease-in-out;
+    &:hover {
+      transform: scale(1.05);
+    }
   }
   &__image {
     height: 12.6rem;
