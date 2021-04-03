@@ -499,7 +499,7 @@ button,
 }
 
 .services {
-  background-color: #fafafa;
+  background-color: #d4e2f3;
   text-align: center;
 }
 
@@ -619,11 +619,27 @@ button,
 .blog__textcontent {
   background-color: #fafafa;
   padding: 1.8rem 1.8rem 2.5rem 1.8rem;
+  color: #9698a6;
 }
 
 @media (min-width: 40em) {
   .blog__textcontent {
     padding: 1.8rem 1.5rem;
   }
+}
+
+.blog__author {
+  font-size: 0.625rem;
+  margin-bottom: 0.9rem;
+}
+
+.blog__title {
+  font-size: 1.3rem;
+  color: #2d314d;
+  margin-bottom: 0.7rem;
+}
+
+.blog__description {
+  font-size: 0.7rem;
 }
 /*# sourceMappingURL=style.css.map */

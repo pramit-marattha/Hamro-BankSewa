@@ -20,7 +20,6 @@
   &__item {
     border-radius: 0.5rem;
     box-shadow: $box-shadow;
-
     overflow: hidden;
   }
   &__image {
@@ -32,6 +31,7 @@
   &__textcontent {
     background-color: $veryLightGrey;
     padding: 1.8rem 1.8rem 2.5rem 1.8rem;
+    color: $grayishBlue;
     @include breakpoints-up(medium) {
       padding: 1.8rem 1.5rem;
     }
@@ -39,11 +39,15 @@
     }
   }
   &__author {
+    font-size: 0.625rem;
+    margin-bottom: 0.9rem;
   }
   &__title {
-  }
-  &__title {
+    font-size: 1.3rem;
+    color: $nitroDarkBlue;
+    margin-bottom: 0.7rem;
   }
   &__description {
+    font-size: 0.7rem;
   }
 }
