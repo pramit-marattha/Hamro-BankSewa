@@ -1,0 +1,153 @@
+// .hero {
+//     background-color: $white;
+
+//     .container {
+//       @include breakpoints-up(large) {
+//         display: flex;
+//         align-items: center;
+//       }
+//     }
+
+//     &__image {
+//       position: relative;
+//       // background-image: url(../../assets/blob.svg);
+//       background-size: cover;
+//       background-repeat: no-repeat;
+//       background-position: center center;
+//       min-height: 29rem;
+
+//       @include breakpoints-up(medium) {
+//         min-height: 35rem;
+//         background-position: center 50%;
+//       }
+
+//       @include breakpoints-up(large) {
+//         flex: 3;
+//         order: 2;
+//         height: 38rem;
+//         background: none;
+
+//         //background-position: left center;
+//       }
+
+//       &::after {
+//         content: "";
+//         height: 100%;
+//         width: 100%;
+//         // z-index: -1;
+//         position: absolute;
+//         background-image: url(../../assets/mockups.png);
+//         background-size: 90%;
+//         background-repeat: no-repeat;
+//         background-position: center center;
+
+//         @include breakpoints-up(medium) {
+//           // width: 105%;
+//           // height: 11%;
+//           // background-position: center 190%;
+//           // background-size: 92%;
+//         }
+//         // @media screen and (min-width: 1025px) and (max-width: 1295px) {
+//         //   // width: 95%;
+//         //   // height: 114%;
+//         //   // display: none;
+//         //   // background-size: 10%;
+//         //   background-position: center 180%;
+//         //   padding-bottom: 20.2rem;
+//         // }
+//         @include breakpoints-up(xmedium) {
+//           // width: 115%;
+//           // height: 117%;
+//           // background-size: 105%;
+//           // background-position: center 190%;
+//           // padding: 20rem;
+//           // left: 1%;
+//         }
+
+//         @include breakpoints-up(large) {
+//           width: 115%;
+//           height: 114%;
+//           background-size: 105%;
+//           background-position: center 180%;
+//           padding: 25.2rem;
+
+//           // left: 1%;
+//         }
+//       }
+//       &::before {
+//         content: "";
+//         height: 100%;
+//         width: 100%;
+//         // z-index: -2;
+//         position: absolute;
+//         background-image: url(../../assets/blob.svg);
+//         background-size: 100%;
+//         background-repeat: no-repeat;
+//         background-position: center bottom;
+
+//         @include breakpoints-up(medium) {
+//           background-size: 92%;
+//         }
+//         @include breakpoints-up(large) {
+//           height: 105%;
+//           width: 105%;
+//         }
+//       }
+//     }
+//     &__content {
+//       text-align: center;
+
+//       @include breakpoints-up(large) {
+//         flex: 2;
+//         order: 1;
+//         text-align: left;
+//       }
+//     }
+//     &__register {
+//       &:hover {
+//         background-color: $defaultBlue;
+//       }
+//     }
+//   }
+
+// .background-fade-register {
+//     visibility: hidden;
+//   }
+
+//   @keyframes background-fade-in {
+//     from {
+//       visibility: hidden;
+//       opacity: 0;
+//     }
+//     1% {
+//       visibility: visible;
+//       opacity: 0;
+//     }
+//     to {
+//       visibility: visible;
+//       opacity: 1;
+//     }
+//   }
+
+//   .background-fade-in {
+//     animation: background-fade-in 350ms ease-in-out forwards;
+//   }
+
+//   @keyframes background-fade-out {
+//     from {
+//       visibility: visible;
+//       opacity: 1;
+//     }
+//     99% {
+//       visibility: visible;
+//       opacity: 0;
+//     }
+//     to {
+//       visibility: hidden;
+//       opacity: 0;
+//     }
+//   }
+
+//   .background-fade-out {
+//     animation: background-fade-out 450ms ease-in-out forwards;
+//   }
