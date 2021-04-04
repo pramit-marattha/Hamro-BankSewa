@@ -1,14 +1,6 @@
 ## Hamro BankSewa
 
-![Web 1920 – 1](https://user-images.githubusercontent.com/37651620/113438839-1998e880-9409-11eb-9cfd-03612f23d926.png)
-
----
-
-![Web 1920 – 2](https://user-images.githubusercontent.com/37651620/113438840-1b62ac00-9409-11eb-9910-1ee9a29e50ea.png)
-
+![screencapture-pramit-marattha-github-io-Hamro-BankSewa-2021-04-03-22_31_28](https://user-images.githubusercontent.com/37651620/113485266-6396d280-94cc-11eb-8244-5cb300520a77.png)
 <p align="center">
-<img src="https://user-images.githubusercontent.com/37651620/113438835-16056180-9409-11eb-81ae-1dd91033a089.png"/>
-</p>
-<p align="center" >
-<img src="https://user-images.githubusercontent.com/37651620/113438837-1998e880-9409-11eb-8c3b-a3cd8511213e.png"/>
+<img src="https://user-images.githubusercontent.com/37651620/113499847-05ec9f80-9539-11eb-9c28-2ffca81b87a2.png"/>
 </p>
